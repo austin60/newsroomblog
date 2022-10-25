@@ -13,6 +13,15 @@ app.use(cors())
 //using routes from routes.js
 app.use("/newsblog",routeURLS);
 
+if(process.env.NODE_ENV==="production"){
+    app.use(express.static("client/build"));
+    app.get("*",(req,res)=>{
+        res.sendFile(path.resolve(__dirname,"client","build","index.html"));
+    })
+}
+
 //defining port to listen
 const port=process.env.PORT||5000;
 app.listen(port,console.log(`serve at port ${port}`))
+
+//remove .get url
