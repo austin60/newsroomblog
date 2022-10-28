@@ -25,7 +25,7 @@ export const Email = () => {
       <label>Email</label><br/>
       <input type="email" name="user_email" placeholder='example@gmail.com' required  className='form-control'/><br/>
       <label>Message</label><br/>
-      <textarea name="message" className='form-control' rows="4" cols="60" required placeholder='enter message'/><br/>
+      <textarea name="message" className='form-control' required placeholder='enter message'/><br/>
       <input type="submit" value="Send"  className='btn'/>
     </form>
     </div>

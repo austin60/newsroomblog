@@ -236,8 +236,10 @@ margin-bottom: 0px;
   }
  }
  @media only screen and (max-width:320px){
-  .info{
+  .mfooter.info{
     width: 98%;
+    height: auto;
+    font-size: 7px;
   }
  }
  /*///////content page////////*/
@@ -401,6 +403,7 @@ color: var(--black);
   border: 2px solid var(--orange);
   outline: none;
   color: var(--gray);
+  width: 100%;
 }
 .mess-form .btn{
   background: var(--orange);
@@ -409,4 +412,12 @@ color: var(--black);
   color: var(--green);
   margin-top: 20px;
   border-radius: 5px;
+}
+@media only screen and (max-width:650px){
+  .mess-form{
+    height: auto;
+  }
+  .mess-form .btn{
+    width: auto;
+  }
 }

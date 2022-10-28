@@ -21,7 +21,7 @@ if(process.env.NODE_ENV==="production"){
 }
 
 //defining port to listen
-const port=process.env.PORT||5000;
+const port=process.env.PORT||4000;
 app.listen(port,console.log(`serve at port ${port}`))
 
 //remove .get url
